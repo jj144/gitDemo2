@@ -16,15 +16,16 @@ public class NewTest {
     private WebDriver driver;		
 	@Test				
 	public void testEasy() {	
+		System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
 		driver.get("https://www.google.com//");  
 		String title = driver.getTitle();	
 		//Assert.assertTrue(title.contains("Google")); 	
 		if(title.contains("Google") ) {System.out.println(" title Test pass");}
 		else {System.out.println(" title Test Fail");}
-			
-		
 	}	
+	
 	public void test2() {	
+		System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
 		driver.get("https://www.google.com//");  
 		String title = driver.getTitle();	
 		//Assert.assertTrue(title.contains("Google")); 	
