@@ -12,30 +12,13 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class NewTest {
+public class DummyTestSample {
     private WebDriver driver;		
 	@Test				
-	public void testEasy() {	
+	public void dummyTest1() {	
 		System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
-		driver.get("https://www.google.com//");  
-		String title = driver.getTitle();	
-		//Assert.assertTrue(title.contains("Google")); 	
-		if(title.contains("Google") ) {System.out.println(" title Test pass");}
-		else {System.out.println(" title Test Fail");}
-		System.out.println(" sample msg1 ");
-		System.out.println(" sample msg2 ");
-			
-		
-	}	
-	public void test2() {	
-		System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
-		driver.get("https://www.google.com//");  
-		String title = driver.getTitle();	
-		//Assert.assertTrue(title.contains("Google")); 	
-		if(title.contains("Google") ) {System.out.println(" title Test pass 2nd time");}
-		else {System.out.println(" title Test Fail 2nd time");}
-			
-		
+		System.out.println("blah blah");
+	
 	}	
 	@BeforeSuite
 	public void beforeSuit() {
