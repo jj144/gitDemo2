@@ -21,14 +21,19 @@ public class DummyTestSample {
 	
 	}	
 	
-	 private WebDriver driver;		
 		@Test				
 		public void dummyTest2() {	
 			System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
 			System.out.println("blah blah");
 		
 		}
-	
+
+			@Test				
+			public void dummyTest3() {	
+				System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
+				System.out.println(" dummyTest3 blah blah");
+			
+			}
 	
 	@BeforeSuite
 	public void beforeSuit() {
