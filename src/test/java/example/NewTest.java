@@ -37,6 +37,19 @@ public class NewTest {
 			
 		
 	}	
+	
+	public void test3() {	
+		System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
+		driver.get("https://www.google.com//");  
+		String title = driver.getTitle();	
+		//Assert.assertTrue(title.contains("Google")); 	
+		if(title.contains("Google") ) {System.out.println(" title Test pass 2nd time");}
+		elseif{ System.out.println(" title Test Fail 1st time");}
+		else {System.out.println(" title Test Fail 2nd time");}
+			
+		
+	}	
+	
 	@BeforeSuite
 	public void beforeSuit() {
 		//Setting system properties of ChromeDriver

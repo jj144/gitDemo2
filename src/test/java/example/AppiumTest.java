@@ -12,20 +12,20 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class DummyTestSample {
+public class AppiumTest {
     private WebDriver driver;		
 	@Test				
-	public void dummyTest1() {	
+	public void appiumTest1() {	
 		System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
-		System.out.println("blah blah");
+		System.out.println("apium wah");
 	
 	}	
 	
 	 private WebDriver driver;		
 		@Test				
-		public void dummyTest2() {	
+		public void appiumTest2() {	
 			System.out.println(" methodname " + getClass().getEnclosingMethod().getName());
-			System.out.println("blah blah");
+			System.out.println("apium wah wah wah");
 		
 		}
 	
